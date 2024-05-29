@@ -23,8 +23,53 @@ const Hero = () => {
         </div>
        
       </div>
+      <ClientReviews/>
       </>
     );
+  };
+  const ClientReviews = () => {
+    const reviews = [
+      {
+        name: "Haris Zaheer",
+        review: "Great power drill! It has been very helpful for my DIY projects.",
+        rating: 5,
+      },
+      {
+        name: "Daniyal Omer",
+        review: "High quality and easy to use. Highly recommend!",
+        rating: 4,
+      },
+      {
+        name: "Abdullah Chaudhary",
+        review: "Good value for money. Performs well on various tasks.",
+        rating: 4,
+      },
+    ];
+  
+    return (
+      <div className="reviews-section">
+        <h2>Client Reviews</h2>
+        <div className="reviews-container">
+          {reviews.map((review, index) => (
+            <div key={index} className="review-card">
+              <h4>{review.name}</h4>
+              <p>{review.review}</p>
+              <div className="review-rating">
+                {renderStars(review.rating)}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+  
+  const renderStars = (rating) => {
+    let stars = "";
+    for (let i = 0; i < rating; i++) {
+      stars += "⭐";
+    }
+    return <span>{stars}</span>;
   };
   
 
