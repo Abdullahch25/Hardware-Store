@@ -1,0 +1,78 @@
+.hero-banner {
+    padding: 20px;
+    background-color: #dcdcdc;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px; 
+    margin: 0 auto;
+    max-width: 70%; 
+  }
+  
+  .banner-content {
+    max-width: 30%;
+  }
+  
+  .banner-content h5 {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .banner-content h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    letter-spacing: 0.05em; 
+  }
+  
+  .large-heading {
+    font-size: 3rem;
+    color: #333;
+    letter-spacing: 0.05em; 
+  }
+  
+  .banner-button {
+    border-radius: 10px;
+    padding: 10px 16px;
+    background-color: #f02d34;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .banner-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .banner-image {
+    max-width: 30%;
+    text-align: center;
+    margin-right: 10px; 
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-description {
+    max-width: 30%;
+    text-align: left;
+    margin-left: 10px; 
+  }
+  
+  .banner-description h4 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .banner-description p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+ 
