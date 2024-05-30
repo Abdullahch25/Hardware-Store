@@ -48,13 +48,13 @@ const Hero = () => {
   
     return (
       <div className="reviews-section">
-        <h2>Client Reviews</h2>
+        <h2>Customer Reviews</h2>
         <div className="reviews-container">
           {reviews.map((review, index) => (
             <div key={index} className="review-card">
               <h4>{review.name}</h4>
               <p>{review.review}</p>
-              <div className="review-rating">
+              <div>
                 {renderStars(review.rating)}
               </div>
             </div>
