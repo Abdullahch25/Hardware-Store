@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding:16px ;
+    
+}
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    
+    
+
+
+    
+}
+.nav-menu{
+    font-size: 15px;
+    color: grey;
+    cursor: pointer;
+}
+.login-cart{
+position: relative;
+top: 10px;
+
+
+}
+
+.login-cart button{
+    width: 120px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background:rgb(241, 240, 239);
+    cursor: pointer;
+}
