@@ -10,7 +10,9 @@ const Hero = () => {
           <h5>Best Deal</h5>
           <h1>Power Drill</h1>
           <h1 className="large-heading">Promotion</h1>
-          <button className="banner-button">Shop Power Drill</button>
+          
+            <button className="banner-button">Shop Power Drill</button>
+           
         </div>
         <div className="banner-image">
           <img src={drillImage} alt="Power Drill" />

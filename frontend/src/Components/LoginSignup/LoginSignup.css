@@ -1,0 +1,81 @@
+.signup ,
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    height: 100vh;
+}
+
+.signup-container,
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.signup-container h1,
+.login-container h1 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.signup-fields,
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.signup-fields input,
+.login-fields input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+.signup-login,
+.login-login{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.signup-login span,
+.login-login span{
+    color: #d9534f;
+    cursor: pointer;
+}
+
+.signup-agree {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-agree input {
+    cursor: pointer;
+}
