@@ -6,17 +6,28 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+<<<<<<< HEAD:frontend/src/Components/NewsLetter/NewsLetter.css
     padding:0px 150px;
+=======
+    padding:0px 90px;
+>>>>>>> 30afbe5 (newer changes):frontend/src/Components/Home/Hero/NewsLetter/NewsLetter.css
     margin-bottom: 100px;
     background-color:#dcdcdc;
     gap:30px;
     border-radius: 15px;
-
+;
 }
 .newsletter h1{
     color:#454545;
+<<<<<<< HEAD:frontend/src/Components/NewsLetter/NewsLetter.css
     font-size: 40px;
     font-weight: 600;
+=======
+    font-size: 45px;
+    font-weight: 450;
+margin-top: 35px;
+text-align: center;
+>>>>>>> 30afbe5 (newer changes):frontend/src/Components/Home/Hero/NewsLetter/NewsLetter.css
 
 }
 .newsletter p{
@@ -24,11 +35,11 @@
     font-size: 20px;
 }
 
-.newsletter div{
+.placeholder{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgb(253, 251, 251);
     width:730px;
     height:70px;
     border-radius:80px;
