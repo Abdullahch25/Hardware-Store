@@ -10,7 +10,9 @@ const Hero = () => {
           <h5>Best Deal</h5>
           <h1>Power Drill</h1>
           <h1 className="large-heading">Promotion</h1>
-          <button className="banner-button">Shop Power Drill</button>
+          
+            <button className="banner-button">Shop Power Drill</button>
+           
         </div>
         <div className="banner-image">
           <img src={drillImage} alt="Power Drill" />
@@ -48,13 +50,13 @@ const Hero = () => {
   
     return (
       <div className="reviews-section">
-        <h2>Client Reviews</h2>
+        <h2>Customer Reviews</h2>
         <div className="reviews-container">
           {reviews.map((review, index) => (
             <div key={index} className="review-card">
               <h4>{review.name}</h4>
               <p>{review.review}</p>
-              <div className="review-rating">
+              <div>
                 {renderStars(review.rating)}
               </div>
             </div>

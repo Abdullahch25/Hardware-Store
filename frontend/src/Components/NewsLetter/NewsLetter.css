@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding:0px 140px;
+    padding:0px 150px;
     margin-bottom: 100px;
     background-color:#dcdcdc;
     gap:30px;
@@ -15,7 +15,7 @@
 }
 .newsletter h1{
     color:#454545;
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 600;
 
 }
@@ -49,8 +49,15 @@
     width:210px;
     height:70px;
     border-radius:80px;
-    background-color:black;
-    color:white;
-    font-size:16px;
+    color:#d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
 }
+.newsletter div button:hover {
+    background-color: #c9302c;
+  }
+  
+
