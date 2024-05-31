@@ -1,4 +1,4 @@
-import Hero from "./Components/Hero/Hero";
+import Hero from "./Components/Home/Hero/NewsLetter/Hero.jsx";
 import NewsLetter from "./Components/NewsLetter/NewsLetter";
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar.jsx";
