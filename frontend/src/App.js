@@ -11,7 +11,8 @@ import Contact from "./Components/Contact/Contact.jsx";
 import Login from "./Components/LoginSignup/Login.jsx";
 import Signup from "./Components/LoginSignup/Signup.jsx";
 import Cart from "./Components/Cart.jsx";
-
+import Admin from "./Components/AdminPanel/Admin.jsx";
+import DashBoard from "./Components/AdminPanel/DashBoard.jsx";
 const App = () => {
   return (
     <Router>
@@ -27,6 +28,8 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/admin" element={<Admin/>}/>
+          <Route path="/dashboard" element={<DashBoard/>}/>
         </Routes>
         <Footer />
       </div>
