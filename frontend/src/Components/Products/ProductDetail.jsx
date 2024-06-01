@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import products from '../Assets/data'; 
 import './ProductDetail.css';
+import { CartContext } from '../Context/CartContext';
 
 const ProductDetail = () => {
   const { id } = useParams();
-
   let product = null;
 
   for (let i = 0; i < products.length; i++) {
@@ -15,9 +15,11 @@ const ProductDetail = () => {
     }
   }
   const [quantity, setQuantity] = useState(1);
+  const {addToCart}=useContext(CartContext);
 
 
   const handleAddToCart = () => {
+    addToCart(product,quantity)
     alert(`Added ${quantity} of ${product.name} to cart`);
   };
 
