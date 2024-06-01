@@ -6,12 +6,12 @@ import logo from "../Assets/logoo.png";
 const Navbar = () => {
   return (
     <>
-      <nav className=" border-gray-200 bg-sky-800	">
+      <nav className=" border-gray-200 bg-gray-600 h-30">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/home">
             <img
               src={logo}
-              className="h-26 opacity-80 hover:opacity-100 cursor-pointer"
+              className=" w-28  opacity-80 hover:opacity-100 hover:w-32 cursor-pointer"
               alt="Logo"
             />
           </Link>
@@ -70,10 +70,28 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/"
+                  to="/products"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Products
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/signup"
+                  className="block py-2 px-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                >
+                  <i class="fa-solid fa-user-plus"></i>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/cart"
+                  className="block py-2 px-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
                 </Link>
               </li>
             </ul>

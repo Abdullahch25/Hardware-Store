@@ -9,7 +9,7 @@ const Contact = () => {
       <section>
         <div class="relative w-full h-96">
           <img
-            class="absolute h-full w-full object-cover object-center"
+            class="absolute h-full w-full object-cover object-center "
             src={Banner}
             alt="nature image"
           />

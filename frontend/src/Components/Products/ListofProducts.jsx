@@ -13,7 +13,7 @@ const ListofProducts= () => {
           <p>{product.description}</p>
           <p>${product.price}</p>
           <Link to={`/product/${product.id}`}>
-            <button>View Details</button>
+            <button >View Details</button>
           </Link>
         </div>
       ))}
