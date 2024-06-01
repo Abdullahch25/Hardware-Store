@@ -1,5 +1,5 @@
-import Hero from "./Components/Hero/Hero";
-import NewsLetter from "./Components/NewsLetter/NewsLetter";
+import Hero from './Components/Home/Hero/Hero.jsx';
+import NewsLetter from './Components/Home/Hero/NewsLetter/NewsLetter.jsx';
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
@@ -9,9 +9,11 @@ import About from "./Components/About/About.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import Login from './Components/LoginSignup/Login.jsx';
 import Signup from './Components/LoginSignup/Signup.jsx';
+import {BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 
 const App = () => {
   return (
+    
     <Router>
     <div className="App">
       
@@ -21,15 +23,15 @@ const App = () => {
           <Route path="/newsletter" element={<NewsLetter />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<ProductList />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/login" element={<Login />} />
-              <Route path="/" element={<Signup />} />
+          <Route path="/product" element={<ProductList />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
         <Footer />
       </div>
       </Router>
-
+    
   );
 };
 
