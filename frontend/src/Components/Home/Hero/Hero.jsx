@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Hero.css";
-import drillImage from "../../Assets/drill.png";
+import "./NewsLetter/Hero.css";
+import drillImage from '../../Assets/drill.png'
+import NewsLetter from "./NewsLetter/NewsLetter";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
           <h5>Best Deal</h5>
           <h1>Power Drill</h1>
           <h1 className="large-heading">Promotion</h1>
-          <button className="banner-button">Shop Power Drill</button>
+          <Link to='/products'><button className="banner-button">Shop Power Drill</button></Link>
         </div>
         <div className="banner-image">
           <img src={drillImage} alt="Power Drill" />
@@ -26,10 +27,13 @@ const Hero = () => {
         </div>
       </div>
       <ClientReviews />
-
+        <div>
+          <NewsLetter/>
+        </div>
+        
       <Link to="/about">
         <div class="flex justify-center">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+          <button class="bg-blue-500 hover:bg-blue-700 max-w-sm text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
             Read what our Clients had to say
           </button>
         </div>
@@ -58,7 +62,7 @@ const ClientReviews = () => {
   ];
 
   return (
-    <div className="reviews-section">
+    <div className="reviews-section hover:shadow-xl hover:shadow-blue-600/30 shadow-2xl shadow-blue-500/20">
       <h2>Client Reviews</h2>
       <div className="reviews-container">
         {reviews.map((review, index) => (
@@ -82,3 +86,4 @@ const renderStars = (rating) => {
 };
 
 export default Hero;
+
