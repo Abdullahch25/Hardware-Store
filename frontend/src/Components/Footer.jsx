@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div class="bg-white pt-4 sm:pt-10 lg:pt-12">
@@ -7,26 +7,26 @@ const Footer = () => {
         <div class="flex flex-col items-center justify-between gap-4 border-t border-b py-6 md:flex-row">
           {/* <!-- nav - start --> */}
           <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-            <a
-              href="#"
+            <Link
+              to="/about"
               class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
               About
-            </a>
+            </Link>
            
            
-            <a
-              href="#"
+            <Link
+              to="/contact"
               class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
               Contact
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="home"
               class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
             >
               Home
-            </a>
+            </Link>
           </nav>
           {/* <!-- nav - end --> */}
 
