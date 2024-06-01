@@ -12,9 +12,7 @@ import About from "./Components/About/About.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import Login from "./Components/LoginSignup/Login.jsx";
 import Signup from "./Components/LoginSignup/Signup.jsx";
-import CartPage from './Components/Cart/CartPage.jsx';
-import CartProvider from './Components/Context/CartContext.jsx';
-import CheckoutPage from './Components/Checkout/CheckoutPage.jsx';
+import Cart from "./Components/Cart.jsx";
 import Admin from "./Components/AdminPanel/Admin.jsx";
 import DashBoard from "./Components/AdminPanel/DashBoard.jsx";
 const App = () => {
@@ -34,10 +32,9 @@ const App = () => {
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/checkout" element={<CheckoutPage />} />
-          <Route path="/admin" element={<Admin/>} />
-          <Route path="/dashboard" element={<DashBoard/>} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/admin" element={<Admin/>}/>
+          <Route path="/dashboard" element={<DashBoard/>}/>
         </Routes>
         <Footer />
       </div>
