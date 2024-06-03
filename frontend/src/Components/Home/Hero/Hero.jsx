@@ -12,12 +12,14 @@ const Hero = () => {
           <h5>Best Deal</h5>
           <h1>Power Drill</h1>
           <h1 className="large-heading">Promotion</h1>
-          <Link to='/products'><button className="banner-button">Shop Power Drill</button></Link>
+          <Link to="/products">
+            <button className="banner-button">Shop Power Drill</button>
+          </Link>
         </div>
         <div className="banner-image">
           <img src={drillImage} alt="Power Drill" />
         </div>
-        <div className="banner-description">
+        <div className="banner-description sm:w">
           <h4>Description</h4>
           <p>
             Enhance your toolkit with our high-performance power drill, designed
@@ -27,13 +29,13 @@ const Hero = () => {
         </div>
       </div>
       <ClientReviews />
-        <div>
-          <NewsLetter/>
-        </div>
-        
+      <div>
+        <NewsLetter />
+      </div>
+
       <Link to="/about">
-        <div class="flex justify-center">
-          <button class="bg-blue-500 hover:bg-blue-700 max-w-sm text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+        <div className="flex justify-center">
+          <button className="bg-blue-500 hover:bg-blue-700 max-w-sm text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition transform duration-300 ease-in-out hover:scale-110">
             Read what our Clients had to say
           </button>
         </div>
