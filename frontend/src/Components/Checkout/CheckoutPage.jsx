@@ -22,7 +22,7 @@ const CheckoutPage = () => {
       Total Amount: $${calculateTotalAmount()}
     `);
     clearCart();
-    navigate('/');
+    navigate('/home');
   };
 
   const calculateTotalAmount = () => {

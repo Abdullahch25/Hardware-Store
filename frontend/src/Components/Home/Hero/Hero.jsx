@@ -12,9 +12,7 @@ const Hero = () => {
           <h5>Best Deal</h5>
           <h1>Power Drill</h1>
           <h1 className="large-heading">Promotion</h1>
-          <Link to="/products">
-            <button className="banner-button">Shop Power Drill</button>
-          </Link>
+          <Link to='/product/1'><button className="banner-button">Shop Power Drill</button></Link>
         </div>
         <div className="banner-image">
           <img src={drillImage} alt="Power Drill" />

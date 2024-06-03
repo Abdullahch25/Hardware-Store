@@ -104,9 +104,8 @@
       
     padding: 20px;
     text-align: center;
-}
-
-/* Media queries for responsiveness */
+  }
+  /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     .hero-banner {
         flex-direction: column;
