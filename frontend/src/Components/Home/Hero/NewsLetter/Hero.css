@@ -1,3 +1,4 @@
+/* Default styles */
 .hero-banner {
     padding: 20px;
     background-color: #dcdcdc;
@@ -9,32 +10,32 @@
     margin: 0 auto;
     max-width: 70%; 
     margin-top: 20px;
-  }
-  
-  .banner-content {
+}
+
+.banner-content {
     max-width: 30%;
-  }
-  
-  .banner-content h5 {
+}
+
+.banner-content h5 {
     font-size: 16px; 
     color: #777;
     margin-bottom: 10px;
-  }
-  
-  .banner-content h1 {
+}
+
+.banner-content h1 {
     font-size: 32px; 
     color: #333;
     margin: 0;
     letter-spacing: 0.8px; 
-  }
-  
-  .large-heading {
+}
+
+.large-heading {
     font-size: 48px; 
     color: #333;
     letter-spacing: 0.8px; 
-  }
-  
-  .banner-button {
+}
+
+.banner-button {
     border-radius: 10px;
     padding: 10px 16px;
     background-color: #f02d34;
@@ -43,60 +44,59 @@
     margin-top: 20px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .banner-button:hover {
+}
+
+.banner-button:hover {
     background-color: #c9302c;
-  }
-  
-  .banner-image {
+}
+
+.banner-image {
     max-width: 30%;
     text-align: center;
     margin-right: 10px; 
-  }
-  
-  .banner-image img {
+}
+
+.banner-image img {
     width: 100%;
     height: auto;
-  }
-  
-  .banner-description {
+}
+
+.banner-description {
     max-width: 30%;
     text-align: left;
     margin-left: 10px; 
-  }
-  
-  .banner-description h4 {
+}
+
+.banner-description h4 {
     font-size: 19.2px; 
     color: #333;
-  }
-  
-  .banner-description p {
+}
+
+.banner-description p {
     font-size: 16px; 
     color: #666;
-  }
-  
- /* Client review section*/
-  .reviews-section {
+}
+
+/* Client review section */
+.reviews-section {
     margin: 40px auto;
     padding: 20px;
     max-width: 70%;
-    
-  }
-  
-  .reviews-section h2 {
+}
+
+.reviews-section h2 {
     text-align: center;
     font-size: 32px; 
     margin-bottom: 20px;
-  }
-  
-  .reviews-container {
+}
+
+.reviews-container {
     display: flex;
     justify-content: space-between;
     gap: 20px; 
-  }
+}
 
-  .review-card {
+.review-card {
     flex: 1;
     background-color:white;
     border-radius: 10px;
@@ -104,4 +104,43 @@
       
     padding: 20px;
     text-align: center;
-  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .hero-banner {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .banner-content,
+    .banner-image,
+    .banner-description {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    
+    .banner-content h1 {
+        font-size: 28px;
+    }
+    
+    .large-heading {
+        font-size: 36px;
+    }
+    
+    .banner-button {
+        margin-top: 10px;
+    }
+    
+    .reviews-section {
+        padding: 10px;
+    }
+    
+    .reviews-container {
+        flex-direction: column;
+    }
+    
+    .review-card {
+        margin-bottom: 20px;
+    }
+}
