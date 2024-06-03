@@ -1,7 +1,7 @@
 import Hero from "./Components/Home/Hero/Hero.jsx";
 import NewsLetter from "./Components/Home/Hero/NewsLetter/NewsLetter.jsx";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes,  } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
 import ProductList from "./Components/Products/ListofProducts.jsx";
@@ -16,6 +16,7 @@ import CheckoutPage from './Components/Checkout/CheckoutPage.jsx';
 import Admin from "./Components/AdminPanel/Admin.jsx";
 import DashBoard from "./Components/AdminPanel/DashBoard.jsx";
 const App = () => {
+  
   return (
     <CartProvider>
     <Router>
