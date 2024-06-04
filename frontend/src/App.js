@@ -1,7 +1,5 @@
 import Hero from './Components/Home/Hero/Hero.jsx';
 import NewsLetter from './Components/Home/Hero/NewsLetter/NewsLetter.jsx';
-import Hero from "./Components/Home/Hero/NewsLetter/Hero.jsx";
-import NewsLetter from "./Components/NewsLetter/NewsLetter";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes,  } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar.jsx";
