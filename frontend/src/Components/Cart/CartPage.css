@@ -25,4 +25,24 @@
     max-width: 150px;
     margin-right: 20px;
   }
-  
+  .cart-item button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px; 
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px; 
+  text-align: center;
+  margin-top: 10px;
+}
+.checkout-button{
+  width:150px;
+  border-radius:5px;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
