@@ -1,14 +1,23 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../Context/CartContext';
+import { CartContext} from '../Context/CartContext';
 import './CartPage.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const CartPage = () => {
   const { cart, removeFromCart } = useContext(CartContext);
   const calculateTotalAmount = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
-
+  const navigate=useNavigate();
+  
+  const handleCheckout = () => {
+    if (cart.length === 0) {
+      alert("Your cart is empty. Please add items to your cart before checkout.");
+    } else {
+      navigate('/checkout')
+    }
+  };
   return (
     <div className="cart-page">
       <h1>Shopping Cart</h1>
@@ -29,9 +38,9 @@ const CartPage = () => {
       </div>
       <div className="cart-footer">
           <h2>Total Amount: ${calculateTotalAmount()}</h2>
-          <Link to="/checkout">
-            <button className="checkout-button">Checkout</button>
-          </Link>
+            <div className='btn-container'>
+            <button className="checkout-button" onClick={handleCheckout}>Checkout </button>
+            </div>
         </div>
 
     </div>
