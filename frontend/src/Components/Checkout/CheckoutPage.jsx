@@ -70,7 +70,9 @@ const CheckoutPage = () => {
           />
            <h2>Total Amount: ${calculateTotalAmount()}</h2>
         </label>
+        <div className='button-container'>
         <button type="submit">Pay</button>
+        </div>
       </form>
     </div>
   );
