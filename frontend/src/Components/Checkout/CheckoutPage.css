@@ -24,14 +24,19 @@
   color: #555;
 }
 
-.checkout-page input[type="text"],
-.checkout-page input[type="email"],
-.checkout-page input[type="number"] {
+.checkout-page input {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .checkout-page button[type="submit"] {
@@ -42,9 +47,21 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  width: 200px;
+  text-align: center;
 }
 
 .checkout-page button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.payment-icons svg {
+  margin: 0 10px;
 }

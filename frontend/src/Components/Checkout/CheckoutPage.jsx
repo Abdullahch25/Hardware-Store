@@ -1,14 +1,21 @@
-import React, { useState, useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { CartContext } from '../Context/CartContext';
-import './CheckoutPage.css';
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { CartContext } from "../Context/CartContext";
+import "./CheckoutPage.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCcVisa,
+  faCcMastercard,
+  faCcAmex,
+  faCcDiscover,
+} from "@fortawesome/free-brands-svg-icons";
 
 const CheckoutPage = () => {
   const { cart, clearCart } = useContext(CartContext);
-  const [address, setAddress] = useState('');
-  const [email, setEmail] = useState('');
-  const [cardName, setCardName] = useState('');
-  const [cardNumber, setCardNumber] = useState('');
+  const [address, setAddress] = useState("");
+  const [email, setEmail] = useState("");
+  const [cardName, setCardName] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
   const navigate = useNavigate();
 
   const handlePayment = (e) => {
@@ -22,11 +29,13 @@ const CheckoutPage = () => {
       Total Amount: $${calculateTotalAmount()}
     `);
     clearCart();
-    navigate('/');
+    navigate("/");
   };
 
   const calculateTotalAmount = () => {
-    return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+    return cart
+      .reduce((total, item) => total + item.price * item.quantity, 0)
+      .toFixed(2);
   };
 
   return (
@@ -68,10 +77,18 @@ const CheckoutPage = () => {
             onChange={(e) => setCardNumber(e.target.value)}
             required
           />
-           <h2>Total Amount: ${calculateTotalAmount()}</h2>
+          <h2>Total Amount: ${calculateTotalAmount()}</h2>
         </label>
-        <button type="submit">Pay</button>
+        <div className="button-container">
+          <button type="submit">Pay</button>
+        </div>
       </form>
+      <div className="payment-icons">
+        <FontAwesomeIcon icon={faCcVisa} size="2x" />
+        <FontAwesomeIcon icon={faCcMastercard} size="2x" />
+        <FontAwesomeIcon icon={faCcAmex} size="2x" />
+        <FontAwesomeIcon icon={faCcDiscover} size="2x" />
+      </div>
     </div>
   );
 };
