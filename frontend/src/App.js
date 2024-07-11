@@ -18,7 +18,7 @@ import CartProvider from "./Components/Context/CartContext.jsx";
 import CheckoutPage from "./Components/Checkout/CheckoutPage.jsx";
 import Admin from "./Components/AdminPanel/Admin.jsx";
 import DashBoard from "./Components/AdminPanel/DashBoard.jsx";
-
+import Product from './Components/Products.jsx'
 const App = () => {
   const dispatch = useDispatch();
   const dataState = useSelector((state) => state.data);
@@ -46,6 +46,7 @@ const App = () => {
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/dashboard" element={<DashBoard />} />
+            <Route path="/product" element={<Product />} />
           </Routes>
           <Footer />
         </div>
